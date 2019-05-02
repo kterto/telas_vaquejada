@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loggin</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/loggin.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+   
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-layer">
+           
+           <div class="form-box">
+
+            <h1>Login</h1>
+
+            <div class="logo-nome">
+                <img src="css/110966-horses/png/horse-head.png" alt="">
+
+               <p><span><b>Vaquejada</b></span><span>Project</span></p>        
+            </div>
+            
+            <form action="login">
+                <div class="form-group user">
+                    <label for="user">Usuário</label>
+                    <input type="user" class="form-control" id="user" placeholder="">
+                </div>
+
+                <div class="form-group password">
+                    <label for="password">Senha</label>
+                    <input type="password" class="form-control hidden" id="password">
+                </div>
+
+                <div class="form-group enter">
+                    <button type="button" class="btn btn-primary enter-btn" id="enter-button" onclick="redirect()">Entrar</button>
+                    <small id="passwordHelper" class="form-text text-muted enter-text">Esqueceu a senha?</small>
+                </div>
+            </form>
+
+           </div>
+            
+        </div>
+    </div>
+    <!-- custom js -->
+    <script src="js/login.js"></script>
+
+</body>
+</html>

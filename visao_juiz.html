@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vaquejada Project</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/visao_juiz.css">
+
+</head>
+<body>
+	<section id="menu">
+
+		<nav class="top-navgation navbar" id="header">
+			<ul class="navbar-dropdown list-unstyled" id="navbar-dropdown">
+				<li class="nav-item" id="logo">
+					<img src="css/110966-horses/png/horse-head.png" alt="" id="horse-head"> <span>Projeto</span>Vaquejada
+				</li>
+
+				<li class="nav-item" id="calendar">
+					<i class="fa fa-calendar"></i>
+				</li>
+
+				<li class="nav-item" id="user">
+					<i class="fa fa-user"></i>
+				</li>
+			</ul>
+		</nav>
+
+	</section>
+
+	<section id="body">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1 box">
+						<ul class="list-unstyled lateral-menu">
+							<li class="lateral-menu-item">
+								<i class="fa fa-calendar"></i>
+								<p>Vaquejada</p>
+							</li>
+
+							<li class="lateral-menu-item">
+								<i class="fa fa-bullseye"></i>
+								<p>Puxadores</p>
+							</li>
+							
+						</ul>
+					</div>
+
+					<div class="col-md-10">
+						<div>
+							<h3> Todas as vaquejadas - Vaquejada Macaíba - <span>Categoria Profissional (1 <span>&#186;</span> Etapa)</span></h3>
+						</div> 
+
+						<div class="form-box col-md-10">
+							<ul class="list-unstyled form-header">
+								<li id="rodizio">1 <span>&#186;</span> Rodízio</li>
+								<li id="senha">Senha Atual</li>
+								<li><a href=""> <i class="fa fa-chevron-left"></i></a></li>
+								<li><a href=""> <i class="fa fa-chevron-right"></i></a></li>
+								<li><div id="timer">timer</div></li>
+								<li><div id="points">points</div></li>
+							</ul>
+							
+							<div class="form-cols">
+								<div class="form-col">
+									<h5>Puxador</h5>
+									<p>José Max Virgens Nascimento</p>
+									<h5>Cavalo Puxador</h5>
+									<p>Macário Apolo</p>
+									<h5>Nota:</h5>
+									<div class="checkboxes">
+										<a class="checkbox" id="checkbox-1"><i class="fa fa-bullseye hidden"></i></a><span>+</span><a class="checkbox" id="checkbox-2"><i class="fa fa-bullseye hidden"></i></a><span>+</span><a class="checkbox" id="checkbox-3"><i class="fa fa-bullseye hidden"></i></a><span>=</span><a class="checkbox" id="result"><span></span></a>
+									</div>
+								</div>
+								<div class="form-col">
+									<h5>Esteira</h5>
+									<p>José Max Virgens Nascimento</p>
+									<h5>Cavalo Esteira</h5>
+									<p>Macário Apolo</p>
+									<div class="suja-limpa">
+										<h6>Limpa</h6>
+										<a class="checkbox"></a>
+									</div>
+									<div class="suja-limpa">
+										<h6>Suja</h6>
+										<a class="checkbox"></a>
+									</div>
+									
+								</div>
+								<div class="form-col">
+									<div id="senha-form">
+										<h5>Senha</h5>
+										<p>01</p>
+									</div>
+									<button class="btn btn-primary">Salvar Nota</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	
+	<!-- jquery -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<!-- custom script -->
+	<script src="js/script.js"></script>
+</body>
+</html>

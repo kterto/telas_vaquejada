@@ -1,0 +1,87 @@
+.vaquejadas-header a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+
+.vaquejadas-header a:hover {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+
+.vaquejadas-header h3 {
+    font-weight: 300;
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+.vaquejadas-header h3 span {
+    font-weight: 700;
+}
+
+#vaq-edit {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35) 
+}
+
+#event-box {
+    width: 100%;
+    margin: 0 2.5%;
+}
+
+.event-day {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+    padding: 10px 0px 10% 0px;
+}
+
+.event-day a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+
+.event-day a:hover {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+
+.checked {
+    border: solid 1px blue;
+    border-left: solid 5px blue;
+    border-radius: 5px;
+}
+
+.unchecked {
+    border: solid 1px lightgray;
+    border-left: solid 5px lightgray;
+    border-radius: 5px;
+}
+
+.event {
+    margin: 10%;
+    padding: 10px 15px;
+    opacity: 0.8;
+}
+
+.event h3 {
+    margin: 0px 4px 0 4px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.event p {
+    margin: 0 5%;
+    text-align: center;
+}
+
+.event-day .event h3 i {
+    color: blue;
+}
+
+.hidden {
+    display: none;
+}

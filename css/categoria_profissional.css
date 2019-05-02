@@ -1,0 +1,297 @@
+#header-categoria-profissional {
+    border-bottom: solid 1px lightgray;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+#vaquejadas-buttons {
+    padding: 1% 0%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-bottom: solid 1px lightgray;
+}
+
+#etapas {
+    padding-right: 7%;
+    border-right: solid 1px lightgray;
+}
+
+#etapa-1 {
+    margin-right: 8%;
+    font-size: 1rem;
+}
+
+#etapa-2 {
+    margin-left: 8%;
+    font-size: 1rem;
+}
+
+
+#visualizacao {
+    padding-right: 7%;
+    border-right: solid 1px lightgray;
+}
+
+#visualizacao h4 {
+    opacity: 0.8;
+    font-size: 1rem;
+    padding-right: 10%;
+}
+
+#visualizacao button {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#pesquisar {
+    position: relative;
+    padding-right: 5%;
+    border-right: solid 1px lightgray;
+}
+
+#pesquisar button {
+    position: absolute;
+    left: 65%;
+    top: 15%;
+    border: none;
+    background: none;
+}
+
+.novo-rodizio {
+    margin-right: 5%;
+}
+
+.rodizio {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0 , 0, 0, 0.35);
+    margin-left: 8%;
+    margin-top: 8%;
+    padding-bottom: 3%;
+    margin-bottom: 8%;
+    /* overflow-y: scroll; */
+}
+
+.rodizio.rodizio-started {
+    border: solid 0.5px blue;    
+}
+
+.rodizio .vaquejada-card-header {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.rodizio .vaquejada-card-header h4 {
+    margin-bottom: 0px;
+}
+
+.buttons .btn-header-play {
+    border-radius: 25px;
+    border: solid 1px lightgray;
+    color: blue;
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.buttons .btn-header-started {
+    border-radius: 25px;
+    border: solid 1px lightgray;
+    color: white;
+    background-color: blue;
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.vaquejada-card-header.header-started{
+    border-bottom: solid 1px blue;
+}
+
+.buttons .btn-header-started:hover {
+    border-radius: 25px;
+    border: solid 1px lightgray;
+    color: white;
+    background-color: blue;
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.buttons .btn-header-play:hover {
+    color: blue;
+}
+
+.mini-card {
+    margin: 5% 3% 5% 3%;
+    border-radius: 7px;
+    border: solid 1px gray;
+    border-left: solid 10px gray;
+    opacity: 0.8;
+}
+
+.mini-card h6 {
+    font-size: 0.8rem;
+    line-height: 0.5rem;
+}
+
+.mini-card .btn-modal {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    /* font-size: 0.8rem; */
+    /* line-height: 0.5rem; */
+}
+
+.mini-card p {
+    margin-bottom: 1.5rem;
+    line-height: 0.7rem;
+}
+
+.ps {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.puxador p {
+    text-overflow: ellipsis;
+}
+
+.cavalo-puxador {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.avaliacao {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.squares span {
+    margin-right: 3%;
+}
+
+.square {
+    border-radius: 2px;
+    border: solid 1px lightgray;
+    margin-left: 0;
+    margin-right: 3%;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#square1, 
+#square2,
+#square3 {
+    opacity: 0.3;
+}
+
+#result {
+    padding: 11px;
+}
+
+.escrito {
+    font-size: 0.6rem;
+    padding: 5px 6.5px !important;
+}
+
+.limpa-suja {
+    margin-left: 27%;
+    max-width: 50%;
+}
+
+#limpa {
+    margin-right: 25px;
+}
+
+#limpa .square {
+    /* padding: 11px;
+    margin-left: 8px; */
+    position: relative;
+    padding: 11px;
+    margin-left: 8px;
+    /* border: solid 1px blue; */
+}
+
+#suja .square {
+    position: relative;
+    padding: 11px;
+}
+
+#limpa .square i {
+    position: absolute;
+    top: 5%;
+    font-size: 1.3rem;
+    color: blue;
+}
+
+#suja .square i {
+    position: absolute;
+    top: 5%;
+    font-size: 1.3rem;
+    color: red;
+}
+
+#limpa .unclicked, 
+#suja .unclicked {
+    opacity: 0;
+}
+
+#limpa .lclicked {
+    /* display: inline;
+    border-radius: 2px;
+    border: solid 1px lightgray;
+    margin-left: 8px;
+    margin-right: 0;
+    padding: 3px 8px;
+    overflow: hidden; */
+    position: relative;
+    padding: 11px;
+    margin-left: 8px;
+    opacity: 1;
+    border-radius: 2px;
+    border: solid 1px blue;
+}
+
+#limpa .lclicked i {
+    position: absolute;
+    top: 5%;
+    font-size: 1.3rem;
+    color: blue;
+}
+
+#suja .sclicked {
+    /* display: inline;
+    border-radius: 2px;
+    border: solid 1px lightgray;
+    margin-left: 8px;
+    margin-right: 0;
+    padding: 3px 8px;
+    overflow: hidden; */
+    position: relative;
+    padding: 11px;
+    opacity: 1;
+    border-radius: 2px;
+    border: solid 1px red;
+}
+
+#suja .sclicked i {
+    position: absolute;
+    top: 5%;
+    font-size: 1.3rem;
+    color: red;
+}
+
+#suja {
+    margin-left: 4%
+}
+
+#suja .square {
+    padding: 11px;
+}
+
+.mini-card-footer {
+    background-color: lightgray;
+    font-size: 0.7rem;
+    padding-left: 4%;
+    padding-right: 4%;
+}

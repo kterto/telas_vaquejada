@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VaquejadaProject</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/vaquejada_macaiba.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/categoria_profissional.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- top-navgation -->
+    <section id="menu">
+
+        <nav class="top-navgation navbar" id="header">
+            <ul class="navbar-dropdown list-unstyled" id="navbar-dropdown">
+                <li class="nav-item" id="logo">
+                    <img src="css/110966-horses/png/horse-head.png" alt="" id="horse-head">
+                    <span>Projeto</span>Vaquejada
+                </li>
+
+                <li class="nav-item" id="calendar">
+                    <i class="fa fa-calendar"></i>
+                </li>
+
+                <li class="nav-item" id="user">
+                    <i class="fa fa-user"></i>
+                </li>
+            </ul>
+        </nav>
+
+    </section>
+    <!-- top-navigation ends -->
+    <section id="body">
+        <div class="container-fluid" id="content-box">
+            <div class="row">
+
+                <div class="col-md-1 box">
+                    <ul class="list-unstyled lateral-menu">
+                        <li class="lateral-menu-item">
+                            <i class="fa fa-calendar"></i>
+                            <p>Vaquejada</p>
+                        </li>
+
+                        <li class="lateral-menu-item">
+                            <i class="fa fa-bullseye"></i>
+                            <p>Puxadores</p>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-11">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="vaquejadas-header" id="header-categoria-profissional">
+                                <a href="vaquejada_macaiba.html">
+                                    <h3>Todas as Vaquejadas - Vaquejada Macaíba 2018 - <span>Categoria
+                                            Profissional</span> </h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div id="vaquejadas-buttons"
+                                class="d-md-flex flex-row justify-content-between align-items-center">
+                                <div id="etapas" class="d-md-flex flex-row justify-content-between align-items-center">
+                                    <div id="etapa-1">
+                                        <button
+                                            class="btn btn-primary d-md-flex flex-row justify-content-between align-items-center"
+                                            id="etapa-1">1 <span>&#170;</span>
+                                            Etapa</button>
+                                    </div>
+                                    <div id="etapa-2">
+                                        <button
+                                            class="btn btn-secondary d-md-flex flex-row justify-content-between align-items-center"
+                                            id="etapa-2">2 <span>&#170;</span>
+                                            Etapa</button>
+                                    </div>
+                                </div>
+                                <div id="visualizacao"
+                                    class="d-md-flex flex-row justify-content-between align-items-center">
+                                    <h4>Vizualização:</h4>
+                                    <button class="btn btn-primary"> 1 </button>
+                                    <button class="btn btn-secondary"> 2 </button>
+                                </div>
+                                <div id="pesquisar" class="d-md-flex flex-row">
+                                    <form action="" class="form">
+                                        <input type="search" class="form-control header-search" placeholder="Pesquisar">
+                                        <button class="search-btn" type="submit">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+
+                                <div class="novo-rodizio">
+                                    <button class="btn btn-primary">+ Novo Rodízio</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div id="rodizio-1" class="rodizio">
+                                <div id="vaquejada-header-1"
+                                    class="vaquejada-card-header d-md-flex flex-row justify-content-between align-items-center">
+                                    <h4>1 <span>&#176;</span> Rodízio</h4>
+                                    <div class="buttons">
+                                        <button id="start-btn" class="btn btn-header-play" onclick="start()"> <i
+                                                id="start-icon" class="fa fa-play"></i> <i id="pause-icon"
+                                                class="fa fa-pause hidden"></i> <span id="btn-header-text"
+                                                class="">Começar</span> <span id="btn-header-text-started"
+                                                class="hidden">00:00:01</span> </button>
+
+                                        <button class="btn btn-vqj-header" type="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-h"></i>
+                                        </button>
+
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <button class="dropdown-item" type="button">Encaixe(2/5)</button>
+                                            <button class="dropdown-item" type="button">Editar</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- mini-card-1 -->
+                                <div class="mini-card" id="mc-1">
+                                    <div class="ps d-md-flex flex-row justify-content-between">
+                                        <div class="puxador">
+                                            <h6>Puxador</h6>
+                                            <button class="btn-modal" data-toggle="modal"
+                                                data-target="#show-mini-card">José Max Virgens Nascimento</button>
+                                            <!-- <p>José Max Virgens Nascimento</p> -->
+                                        </div>
+                                        <div class="senha">
+                                            <h6>senha</h6>
+                                            <p>01</p>
+                                        </div>
+                                    </div>
+                                    <div class="cavalo-puxador">
+                                        <h6>Cavalo Puxador</h6>
+                                        <p>Macário Apolo</p>
+                                    </div>
+
+                                    <div class="avaliacao d-md-flex justify-content-between">
+                                        <div class="nota">
+                                            <h6>Nota:</h6>
+                                            <div
+                                                class="squares d-md-flex flex-row justify-content-between align-items-center">
+                                                <div class="square" id="square1" onclick="darken('square1')"><i
+                                                        class="fa fa-check"></i></div> <span> + </span>
+                                                <div class="square" id="square2" onclick="darken('square2')"><i
+                                                        class="fa fa-check"></i></div> <span> + </span>
+                                                <div class="square" id="square3" onclick="darken('square3')"><i
+                                                        class="fa fa-check"></i></div> <span> = </span>
+                                                <div class="square" id="result"></div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="limpa-suja d-md-flex flex-row justify-content-between">
+                                                <div class="col-md-2">
+                                                    <div id="limpa">
+                                                        <h6>Limpa</h6>
+                                                        <div class="square" id="square-limpa" onclick="flimpa()"><i
+                                                                class="fa fa-check unclicked" id="check-limpa"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div id="suja">
+                                                        <h6>Suja</h6>
+                                                        <div class="square" id="square-suja" onclick="fsuja()"><i
+                                                                class="fa fa-check unclicked" id="check-suja"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="mini-card-footer d-md-flex justify-content-between align-items-center">
+                                        <span>Alterar Ordem</span>
+                                        <span>Colocar Nota</span>
+                                        <span>Outras Opções</span>
+                                    </div>
+                                </div>
+                                <!-- mini-card-2 -->
+                                <div class="mini-card">
+                                    <div class="ps d-md-flex flex-row justify-content-between">
+                                        <div class="puxador">
+                                            <h6>Puxador</h6>
+                                            <p>Ronald Dener</p>
+                                        </div>
+                                        <div class="senha">
+                                            <h6>senha</h6>
+                                            <p>03</p>
+                                        </div>
+                                    </div>
+                                    <div class="cavalo-puxador">
+                                        <h6>Cavalo Puxador</h6>
+                                        <p>Macário Apolo</p>
+                                    </div>
+
+                                    <div class="avaliacao d-md-flex justify-content-between">
+                                        <div class="nota">
+                                            <h6>Nota:</h6>
+                                            <div
+                                                class="squares d-md-flex flex-row justify-content-between align-items-center">
+                                                <div class="square" id="square1"><i class="fa fa-check"></i></div>
+                                                <span> + </span>
+                                                <div class="square" id="square2"><i class="fa fa-check"></i></div>
+                                                <span> + </span>
+                                                <div class="square" id="square3"><i class="fa fa-check"></i></div>
+                                                <span> = </span>
+                                                <div class="square" id="result"></div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="limpa-suja d-md-flex flex-row justify-content-between">
+                                                <div class="col-md-2">
+                                                    <div id="limpa">
+                                                        <h6>Limpa</h6>
+                                                        <div class="square" id="square-limpa"><i
+                                                                class="fa fa-check unclicked" id="check-limpa"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div id="suja">
+                                                        <h6>Suja</h6>
+                                                        <div class="square" id="square-suja"><i
+                                                                class="fa fa-check unclicked" id="check-suja"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="mini-card-footer d-md-flex justify-content-between align-items-center">
+                                        <span>Alterar Ordem</span>
+                                        <span>Colocar Nota</span>
+                                        <span>Outras Opções</span>
+                                    </div>
+                                </div>
+                                <!-- mini-card-3 -->
+                                <div class="mini-card">
+                                    <div class="ps d-md-flex flex-row justify-content-between">
+                                        <div class="puxador">
+                                            <h6>Puxador</h6>
+                                            <p>Silas Pedrosa</p>
+                                        </div>
+                                        <div class="senha">
+                                            <h6>senha</h6>
+                                            <p>04</p>
+                                        </div>
+                                    </div>
+                                    <div class="cavalo-puxador">
+                                        <h6>Cavalo Puxador</h6>
+                                        <p>Macário Apolo</p>
+                                    </div>
+
+                                    <div class="avaliacao d-md-flex justify-content-between">
+                                        <div class="nota">
+                                            <h6>Nota:</h6>
+                                            <div
+                                                class="squares d-md-flex flex-row justify-content-between align-items-center">
+                                                <div class="square" id="square1"><i class="fa fa-check"></i></div>
+                                                <span> + </span>
+                                                <div class="square" id="square2"><i class="fa fa-check"></i></div>
+                                                <span> + </span>
+                                                <div class="square" id="square3"><i class="fa fa-check"></i></div>
+                                                <span> = </span>
+                                                <div class="square" id="result"></div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="limpa-suja d-md-flex flex-row justify-content-between">
+                                                <div class="col-md-2">
+                                                    <div id="limpa">
+                                                        <h6>Limpa</h6>
+                                                        <div class="square" id="square-limpa"><i
+                                                                class="fa fa-check unclicked" id="check-limpa"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div id="suja">
+                                                        <h6>Suja</h6>
+                                                        <div class="square" id="square-suja"><i
+                                                                class="fa fa-check unclicked" id="check-suja"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="mini-card-footer d-md-flex justify-content-between align-items-center">
+                                        <span>Alterar Ordem</span>
+                                        <span>Colocar Nota</span>
+                                        <span>Outras Opções</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <!-- jquery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/categoria_profissional.js"></script>
+
+
+    <!-- show mini card Modal -->
+    <div class="modal fade" id="show-mini-card" tabindex="-1" role="dialog" aria-labelledby="show-mini-card"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header vaquejada-card-header">
+                    <h5 class="modal-title" id="exampleModalLabel">José Max Virgens Nascimento
+                    </h5>
+                    <button class="btn btn-vqj-header">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
